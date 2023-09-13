@@ -1,0 +1,46 @@
+.faqs-container {
+    margin-bottom: 10px;
+    background: #636363;
+}
+
+.faqs-header {
+    background: #636363;
+    color: #FFFFFF;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+    border: 1px solid #c5c1c1a6;
+}
+
+.faqs-header span {
+    padding-bottom: 4px;
+}
+
+.faqs-content {
+    background: #636363;
+    color: #FFFFFF;
+    height: 0;
+    padding: unset;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.faqs-content div {
+    padding: 10px 30px;
+}
+
+.faqs-container .active {
+    height: 150px;
+    opacity: 1;
+    visibility: visible;
+    overflow-y: auto;
+}
+
+.faqs-container .active-header {
+    background: #4AC49A;
+}

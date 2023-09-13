@@ -1,0 +1,111 @@
+.nav {
+    height: 108px;
+    padding:25px 0px;
+    box-sizing: border-box;
+}
+
+.nav .nav-logo {
+    float: left;
+    height: 62px;
+    width: 62px;
+    cursor: pointer;
+}
+
+.nav .nav-items {
+    float: left;
+}
+
+.nav .nav-item {
+    display: inline-block;
+    padding: 17px 24px;
+    cursor: pointer;
+}
+
+.nav .nav-item:last-child {
+    display: none;
+}
+
+.nav .nav-item:hover, .nav .active {
+    color: rgb(32, 173, 173);
+}
+
+#sidenav-mobile-content, #sidenav-mobile-content  {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav .nav-items {
+        float: right;
+    }
+
+    .nav .nav-item:last-child {
+        display: block;
+    }
+
+    .nav .nav-item:not(:last-child) {
+        display: none;
+    }
+
+    .nav .nav-item svg {
+        font-size: 30px;
+    }
+
+    #sidenav-mobile-content, #sidenav-mobile-content  {
+        display: block;
+    }
+
+    #sidenav-mobile-content {
+        width: 250px;
+        background: #ffffff;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+    }
+
+    .sidenav-mobile {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color:rgb(61 160 178 / 18%);;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    
+    .active-mobile {
+        width: 100%;
+    }
+    
+    #sidenav-mobile-content .closebtn { 
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    #sidenav-mobile-content .closebtn span { 
+        padding: 5px;
+        margin: 20px;
+        border-radius: 2px;
+        width: 20px;
+        height: 24px;
+        text-align: center;
+        font-weight: 900;
+        border: 1px dotted #1b1b1b3b;
+        cursor: pointer;
+    }
+    
+    
+    #sidenav-mobile-content .link { 
+        display: block;
+        border-bottom: 1px solid rgba(163, 154, 154, 0.268);
+        padding: 12px 16px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    #sidenav-mobile-content .active { 
+        color: rgb(32, 173, 173);
+    }
+}

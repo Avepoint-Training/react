@@ -1,0 +1,37 @@
+header {
+    padding: 0 10px;
+    height: 50px;
+    background: #333333 0% 0% no-repeat padding-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header #header-left {
+    color: #ffffff;
+    display: flex;
+    column-gap: 15px;
+}
+
+header svg {
+    color: #ffffff;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+header #header-right {
+    display: flex;
+    column-gap: 15px;
+}
+
+
+header #header-right svg {
+    margin-top: 3px;
+}
+
+header #header-right img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: contain;
+}

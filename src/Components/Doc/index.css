@@ -1,0 +1,11 @@
+.doc-gallery-item {
+    display: flex;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.doc-gallery-item span {
+    font-size: 14px;
+    color: #27313C;
+}

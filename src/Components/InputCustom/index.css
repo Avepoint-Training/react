@@ -1,0 +1,24 @@
+
+#input-common {
+    width: 30%;
+    height: 32px;
+    background: #E1DFDD 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0 5px;
+}
+
+#input-common input {
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    height: 32px;
+    width: 100%;
+}
+
+
+#input-common input:focus-visible {
+    outline: unset;
+}
